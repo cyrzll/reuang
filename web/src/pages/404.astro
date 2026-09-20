@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="404 - Halaman Tidak Ditemukan | REUANG">
+  <main class="min-h-screen flex items-center justify-center p-4 sm:p-6 bg-[#fafafa] font-sans select-none">
+    <div class="max-w-md w-full text-center flex flex-col items-center">
+      <!-- Logo Brand -->
+      <a href="/" class="mb-6 hover:opacity-90 transition-opacity">
+        <img
+          src="/logo.png"
+          alt="REUANG"
+          class="h-8 sm:h-9 w-auto object-contain mx-auto"
+        />
+      </a>
+
+      <!-- 404 Typography (Tanpa border) -->
+      <div class="text-7xl sm:text-8xl font-bold font-mono tracking-tighter text-zinc-900 mb-3">
+        404
+      </div>
+
+      <!-- Pesan 404 -->
+      <h1 class="text-xl sm:text-2xl font-semibold tracking-tight text-zinc-950 mb-2">
+        Ups, tidak ada pesanan disini
+      </h1>
+
+      <!-- Deskripsi -->
+      <p class="text-xs sm:text-sm text-zinc-500 leading-relaxed max-w-sm mb-8">
+        Halaman yang Anda tuju tidak ditemukan atau tautan telah berpindah alamat.
+      </p>
+
+      <!-- Tombol Kembali ke / -->
+      <a
+        href="/"
+        class="inline-flex items-center justify-center gap-2 h-10 px-6 rounded-lg bg-zinc-950 text-white text-xs font-medium hover:bg-zinc-800 active:scale-[0.98] transition-all shadow-xs cursor-pointer"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-4 h-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m12 19-7-7 7-7" />
+          <path d="M19 12H5" />
+        </svg>
+        <span>Kembali</span>
+      </a>
+    </div>
+  </main>
+</Layout>

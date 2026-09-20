@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.1",
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "hono": "^4.13.7",
+    "mysql2": "^3.24.4",
+    "pino": "^10.3.1",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/qrcode": "^1.5.6",
+    "@types/qrcode-terminal": "^0.12.2",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.23.0",
+    "typescript": "^7.0.2"
+  }
+}

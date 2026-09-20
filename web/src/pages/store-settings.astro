@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Dashboard } from '../components/Dashboard'
+---
+
+<Layout title="Pengaturan Toko - REUANG">
+  <Dashboard client:load initialTab="store-settings" transition:persist="dashboard-root" />
+</Layout>

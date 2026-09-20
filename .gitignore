@@ -1,0 +1,78 @@
+# =============================================================================
+# Dependencies
+# =============================================================================
+node_modules/
+.pnpm-store/
+
+# =============================================================================
+# Environment & Secrets
+# =============================================================================
+.env
+.env.*
+!.env.example
+
+# =============================================================================
+# Build & Output
+# =============================================================================
+dist/
+build/
+.astro/
+.output/
+
+# =============================================================================
+# Logs & Debugging
+# =============================================================================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =============================================================================
+# WhatsApp & Bot Session Credentials (Baileys / Telegram)
+# =============================================================================
+baileys_auth_info/
+baileys_auth/
+wa-sessions/
+session/
+auth_info_baileys/
+server/wa-bot/*
+!server/wa-bot/.gitkeep
+*.session
+*.session-journal
+
+# =============================================================================
+# Uploaded & Dynamic Media Files
+# =============================================================================
+server/media/bukti/*
+server/media/product/*
+server/media/qris/*
+server/media/profile/*
+!server/media/profile/default-profile.jpeg
+!**/media/**/.gitkeep
+
+# =============================================================================
+# Operating System & IDE Files
+# =============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# =============================================================================
+# Local Rules & AI Agent Artifacts
+# =============================================================================
+GEMINI.md
+.gemini/
+.agents/
+scratch/
