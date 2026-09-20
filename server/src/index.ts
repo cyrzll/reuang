@@ -40,7 +40,7 @@ app.route('/api/auth', authRouter)
 app.route('/api/account-settings', accountSettingsRouter)
 app.route('/api', apiRouter)
 
-const port = Number(process.env.PORT) || 3000
+const port = Number(process.env.PORT) || 3005
 
 // Initialize database schema and restore active sessions before listening
 async function bootstrap() {
